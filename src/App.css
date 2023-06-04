@@ -1,38 +1,378 @@
-.App {
+*{
+  box-sizing: border-box; 
+  
+  }
+  
+  div{
+      background:
+      linear-gradient(
+          rgba(70,218,191,0.7),
+          rgba(70,218,191,0.7)
+      ),
+      url(/public/images/Homepage\ Background.png);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      font-size: 1.6rem;
+      margin: 0;
+  }
+  .container{
+      margin: 0 auto;
+      width:100%;
+  }
+  
+  .nav-links{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      gap: 80px;
+      position: absolute;
+      width: 1262px;
+      height: 51.97px;
+      left: 89px;
+      top: 30px;
+      opacity: 0.9;
+      color: #4e4d4d;
+  }
+  
+  .nav-links a{
+      font-size: 1.25em;
+      line-height: 19px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #2a2626;
+      text-decoration: none;
+      font-weight: 400;
+  }
+  
+  .nav-links img{
+      padding-right: 4px;
+      width: 17px;
+      height: 15px;
+  }
+  
+  #catalog{
+      border: 1px solid  #2a2626;
+      border-radius: 3px;
+      padding: 7px 20px;
+  }
+  
+  #sign-in{
+      border: 1px solid  #2a2626;
+      border-radius: 5px;
+      padding: 7px 37px; 
+  }
+  
+  .welcome img{
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  left: 84px;
+  top:84px;
+  padding-top: 4px;
+  margin-bottom:2621px; 
+  border-radius: 15px;
+  filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+  }
+  
+  .welcome_home_box{
+  width: 1200px;
+  height: 800px;
+  margin-left: 120px;
+  margin-top: 111px;
+  margin-bottom: 1969px;
+  margin-right: 120px;
+  background: rgba(224,224,224,0.75);
+  border-radius: 60px;
+  }
+  
+  .welcome_home_box img{
+  width: 600px;
+  height: 400px;
+  border: 4px solid rgba(70,218,191,0.75);
+  filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+  border-radius: 30px;
+  margin: 56px 300px 44px 300px;
+  }
+  
+  .home_name{
+  margin: 496px auto 40px auto;
+  width: 536px;
+  height: 116px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  color: #4e4d4d;
+  /* margin: 496px 332px 188px 332px; */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  
+  .welcome span{
+  font-style: normal;
+  font-size: 1.25em;
+  line-height: 23px;
+  text-align: center;
+  color: #4e4d4d;
+  }
+  
+  #BPL{
+  font-size: 3.25em;
+  font-weight: 400;
+  font-family: Arial, Rounded MT, Bold;
+  }
+  
+  .welcome_home_box button{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  align-items: center;
+  font-family: Arial, Rounded MT, Bold;
+  font-weight: 400;
+  font-size: 1.5000em;
+  padding: 24px;
+  gap: 10px;
+  width: 272px;
+  height: 76px;
+  background:rgba(70,218,191,0.75);
+  border: 1px solid #4e4d4d;
+  border-radius: 8px;  
+  margin: 60px 452px 57px 452px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Homepage location and hours section */
+  
+  .location_home_box{
+  position: absolute;
+  width: 1200px;
+  height: 800px;
+  top: 1023px;
+  left: 120px;
+  background: rgba(224,224,224,0.75);
+  border-radius: 60px;
   }
-}
+  
+  #location{
+      width: 22%;
+      margin: 19px 0 0 487px;
+      font-weight: 400;
+      font-size: 2em;
+      line-height: 37px;
+      text-decoration: underline;
+      color: #4e4d4d;
+  }
+  
+  .location_hours{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0 2em;
+      gap: 243px;
+      width: 70%;
+      line-height: 2em;
+      margin: 30px auto;
+  }
+  
+  .location_hours address{
+      width: 32%;
+      padding: 0 0 0 2em;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5000em;
+      color: #4e4d4d;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+  }
+  
+  .location_hours h3{
+      text-decoration: underline;
+  }
+  
+  .location_hours ul{
+      width: 75%;
+      font-weight: 400;
+      font-size: 1.5000em;
+      line-height: 32px;
+      color: #4e4d4d;
+  }
+  
+  #donations{
+  width: 100%;
+  left: 300px;
+  right: 522px;
+  bottom: 187px;
+  padding: 0 0 1.2500em 0;
+  font-weight: 400;
+  line-height: 37px;
+  font-size: 2em;
+  color: #4e4d4d;
+  text-decoration: underline;
+  }
+  
+  .donations{
+     width: 53%;
+     padding: 1em 0 0 0;
+      top: 450px;
+      left: 172px;
+      margin: 0 auto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.2500em;
+      line-height: 30px;
+      text-align: center;
+      color: #4e4d4d;
+  }
+  
+  .donation_giver_info{
+      margin: 0 auto;
+      font-size:1em;
+      line-height: 30px;
+      text-align: center;
+      color: #4e4d4d;
+      padding-bottom: 2.75em;
+  }
+  
+  hr{
+      position: absolute;
+      width: 78%;
+      height: 0;
+      left: 100px;
+      top: 275px;
+      border: 1px solid #4e4d4d;
+      margin-top: 85px;
+  }
+  
+  .donate{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: .25em .5em;
+      gap: 10px;
+      /* position: absolute; */
+      width: 29%;
+      margin: 0 auto;
+      /* height: 52px; */
+      left: 331px;
+      top: 184px;
+      background-color: rgba(70, 218, 191, 0.5);
+      border: 1px solid #4e4d4d;
+      border-radius: 8px;
+      font-size: 1.5000em;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      color: #4e4d4d;
+  }
+  
+  /* Homepage Events section */
+  .event_calendar{
+  /* position:absolute; */
+  width: 100%;
+  /* height: 800px; */
+  /* left: 118px; */
+  top: 1935px;
+  /* margin-bottom: 110px;
+  margin-right: 120px; */
+  background: rgba(224,224,224,0.75);
+  border-radius: 60px;
+  }
+  
+  .events_home_box{
+      width: 1200px;
+      height: 800px;
+      left: 120px;
+      top: 111px;
+      margin-bottom: 1969px;
+      margin-right: 120px;
+      background: #ffffff;
+      border-radius: 60px;
+  }
+  
+  .events_home_box h2{
+      /* position: absolute; */
+      /* top: 56px;
+      bottom: 707px;
+      left: 468px;
+      right: 469px; */
+      width: 22%;
+      margin: 19px 0 0 487px;
+      /* height: 37px; */
+      font-weight: 400;
+      font-size: 2em;
+      line-height: 37px;
+      text-decoration: underline;
+      color: #4e4d4d;
+  }
+  
+  .event_view_registration{
+      /* position: absolute; */
+      /* top: 88px;
+      bottom: 680px;
+      left: 451px;
+      right: 469px; */
+      width: 63%;
+      /* height: 37px; */
+      font-size: 1.2500em;
+      line-height: 37px;
+      text-decoration: none;
+      color: #4e4d4d;
+  }
+  
+  .child_teen_events, .adult_events{
+      display: inline-block;
+      margin: 27px 16px 0 230px;
+      text-align: center;
+      padding: .25em .25em;
+      gap: 10px;
+      width: 17%;
+      /* height: 37px; */
+      /* margin-left: 220px; */
+      /* margin-top: 709px; */
+      border: 1px solid #4e4d4d;
+      border-radius: 8px;
+      font-size: 1.1250em;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      color: #4e4d4d;
+    
+  }
+  
+  .events_for_all{
+  /* position: absolute; */
+  width:68%;
+  margin: 112px 0px 0 0px;
+  }
+  
+  footer{
+      display: block;
+      text-align: center;
+      bottom: 0;
+  }
+  
+  footer a{
+   width: 113px; 
+   height: 28px;
+   font-family: 'Arial Rounded MT Bold';
+   font-size: 1.5000em;
+   line-height: 28px;
+   color: #4e4d4d;
+  }
+  
+  footer img{
+      width: 49.69px;
+      height: 34px;
+      padding-right: 8px;
+  }
+  
+  .footer_img{
+      margin-top: 12px;
+      padding-top: 12px;
+  }
+  
+  @container (min-width 414) {
+      .body{
+          width: 100%;
+      }
+      .container{
+          width: 50%
+      }
+      
+  }
